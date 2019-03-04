@@ -1,13 +1,11 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from '../components/head'
-import Nav from '../components/nav'
+import React from "react";
+import Link from "next/link";
+import Head from "../components/Head";
+import Nav from "../components/Nav";
+import Layout from "../components/Layout";
 
 const Home = () => (
-  <div>
-    <Head title="Home" />
-    <Nav />
-
+  <Layout>
     <div className="hero">
       <h1 className="title">Welcome to Next!</h1>
       <p className="description">
@@ -25,7 +23,7 @@ const Home = () => (
           <a className="card">
             <h3>Examples &rarr;</h3>
             <p>
-              Find other example boilerplates on the{' '}
+              Find other example boilerplates on the{" "}
               <code>create-next-app</code> site
             </p>
           </a>
@@ -85,7 +83,7 @@ const Home = () => (
         color: #333;
       }
     `}</style>
-  </div>
-)
+  </Layout>
+);
 
-export default Home
+export default Home;
